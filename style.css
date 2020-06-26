@@ -1,0 +1,125 @@
+body{
+  margin: 0;
+  padding:0;
+  background-image: url("../images/green.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  background-color: #fbd46d;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 15px;
+  color:#d92027
+}
+
+hr {
+  border-style:dotted;
+  border-color: white;
+  border-width: medium;
+  width: 6%;
+  border-top-style: dotted;
+}
+
+/*Div*/
+.register{
+  background-image: url("../images/light.jpg");
+  background-size: auto;
+  width: 500px;
+  height: 825px;
+  margin: 0px 0px 0px 450px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+/*All Labels*/
+label{
+  width: 2400px;
+  display: inline-block;
+  text-align:right;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #035aa6
+}
+
+/*All Inputs*/
+input{
+  padding: 5px;
+  font-size: 10;
+  border-radius: 3px;
+  border:none;
+  margin-left: 30px;
+  outline: 0px;
+}
+input[type="radio"]{
+  margin-left: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type="tel"]{
+  margin-left: 25px;
+}
+input[type="submit"]{
+  background-color: #f7f7ee;
+  color: #07031a;
+  padding: 5px;
+  font-size: 10;
+  border-radius: 3px;
+  border:none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+textarea{
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*Season*/
+.season label{
+  text-align: left;
+  width: 500px;
+  margin-left: 10px;
+}
+
+/*Period*/
+.period label{
+  text-align: left;
+  width: 500px;
+  margin-left: 10px;
+}
+
+/*Pik-Type*/
+.piktype{
+  padding:5px;
+  font-size: 12px;
+  margin-left:20px;
+  border-radius:5px;
+  border: none;
+  cursor: pointer;
+}
+/*Quantity*/
+select{
+  padding:5px;
+  font-size:12px;
+  margin-left:2px;
+  border-radius:5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Update*/
+button{
+  background-color: #f7f7ee;
+  color: #07031a;
+  padding: 5px;
+  font-size: 10;
+  border-radius: 3px;
+  border:none;
+  margin-left: 10px;
+  cursor: pointer;
+}
