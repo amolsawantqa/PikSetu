@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="sliderstyle.css">
+    <style>
+        *{margin:0;padding:0;}
+        body{background-color:white;background-size:cover;background-position:center;box-sizing:border-box;font-family:sans-serif;}
+        .menu-bar{background-color:grey;text-align:center;position:fixed;width:100%;font-size:15px;}
+        .menu-bar ul{display:inline-flex;list-style:none;color:white;}
+        .menu-bar ul li{margin:15px;padding:15px;width:80px;}
+        .menu-bar ul li a{text-decoration:none;color:white;}
+        .active, .menu-bar ul li:hover{background-color:#2bab0d;border-radius:3px;}
+        .submenu-1{display:none;}
+        .menu-bar ul li:hover .submenu-1{display:block;position:absolute;background-color:green;margin-top:15px;margin-left:-15px;}
+        .menu-bar ul li:hover .submenu-1 ul{display:block;margin:10px;}
+        .menu-bar ul li:hover .submenu-1 ul li{width:150px;padding:10px;border-bottom:1px dotted white;background:transparent;border-radius:0;}
+        .menu-bar ul li:hover .submenu-1 ul li:last-child{border-bottom:none;}
+        .menu-bar ul li:hover .submenu-1 ul li a:hover{color:black;}
+        .submenu-2{display:none;}
+        .hover-me:hover .submenu-2{display:block;position:absolute;background-color:green;margin-top:-40px;margin-left:140px;} 
+
+
+        .panel-1,.panel-2,.panel-3{height:500px;border:1px solid black;}
+        .panel-1{padding-top:95px;}
+        .panel-4{height:410px;}
+        .panel-5{height:100px;border:1px solid black;}
+
+
+        .news-main{display:flex;justify-content:space-around;}
+        .sub-news{width:30%;text-align:center;}
+        .hover-img{transition:transform .2s;width:80%;height:70%;margin:0 auto;}
+        .hover-img:hover{-ms-transform:scale(1.3);-webkit-transform:scale(1.3);transform:scale(1.3);}    
+        
+    </style>
+</head>
+<body>
+
+<!--Navigation bar-->
+    <div class="menu-bar" style="z-index:2;">
+
+         <!--img src="emblem.png" style="height:80px;width:50px;float:left;"></img-->
+        <img src="logo.png" style="height:80px;width:150px;float:left;padding:0px 15px;"></img>
+   
+        <ul>
+            <li><a href="#">About us</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="#">sublink 1</a></li>
+                        <li class="hover-me"><a href="#">sublink 2</a>
+                            <div class="submenu-2">
+                                <ul>
+                                    <li><a href="#">sub-sublink 1</a></li>
+                                    <li><a href="#">sub-sublink 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Farmers Corner</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="#">sublink 1</a></li>
+                        <li><a href="#">sublink 2</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Pik Registration</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="#">sublink 1</a></li>
+                        <li><a href="#">sublink 2</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Traders Corner</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Recruitments</a></li>
+            <li><a href="#">Pik-Search</a></li>
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">Languages</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="#">Marathi</a></li>
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">Kannad</a></li>
+                        <li><a href="#">Telgu</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<!--Navigation bar ends-->
+
+
+    <div class="panel-1" height=500px >
+        
+        <div class="slideshowContainer">
+          
+           
+              <img class="imageSlides" src="01.jpeg" alt="tractor in farm" style="width:100%; height:500px;">
+              <img class="imageSlides" src="02.jpeg" alt="new grass" style="width:100%; height:500px;">
+              <img class="imageSlides" src="03.jpeg" alt="farmer farming" style="width:100%; height:500px;">
+              
+
+              <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+              <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+              
+              <div class="slideshowCircles">
+                <span class="circle dot"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              
+        </div>
+
+    </div>
+
+
+    <div class="panel-2">
+        <h3 align=center>What's New</h3>
+        <br>
+        <br>
+        <div class="news-main">
+            <div class="sub-news">
+                <img class="hover-img" src="01.jpeg" ></img>
+                <h4>Farmer Experience</h4>
+                <p>For 50 years, WWF has been protecting the future of nature.
+                    The world's leading conversation organzation,WWF works in 100 countries and is supported by
+                    1.2 million members in the united states and close to 5 million globally.
+                    For 50 years, WWF has been protecting the future of nature.
+                </p>    
+            </div>
+            <div class="sub-news">
+                <img class="hover-img" src="02.jpeg" ></img>
+                <h4>Government Info.</h4>
+                <p>For 50 years, WWF has been protecting the future of nature.
+                    The world's leading conversation organzation,WWF works in 100 countries and is supported by
+                    1.2 million members in the united states and close to 5 million globally.
+                    For 50 years, WWF has been protecting the future of nature.
+                </p>    
+            </div>
+            <div class="sub-news" >
+                <img class="hover-img" src="03.jpeg" ></img>
+                <h4>Trader Experience</h4>
+                <p>For 50 years, WWF has been protecting the future of nature.
+                    The world's leading conversation organzation,WWF works in 100 countries and is supported by
+                    1.2 million members in the united states and close to 5 million globally.
+                    For 50 years, WWF has been protecting the future of nature.
+                </p>    
+            </div>
+        </div>
+
+    </div>
+
+    <div class="panel-3"style="background-color:lightgrey;">
+        <h3>Panel 3</h3>
+        <p>panel 3 content</p>
+    </div>
+
+    <div class="panel-4">
+        <h3 align="center">Videos</h3>
+        <br><br>
+        <div class="videos" style="display:flex;justify-content:space-around;">
+            <iframe  width="540" height="315" src="https://www.youtube.com/embed/9N5vCBzUl1o?playlist=uaurX9tyHno&rel=0" frameborder="0"  allowfullscreen></iframe>
+
+            <iframe  width="540" height="315" src="https://www.youtube.com/embed/9N5vCBzUl1o?playlist=uaurX9tyHno&rel=0" frameborder="0"  allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="panel-5" style="background-color:black;color:white;">
+        <br>
+        <p align=center>
+        About this website  /
+        Terms of use    /
+        Website policies    /
+        Sitemap /
+        Help    /
+        Contact Us  /
+        Web Information Manager /
+        RTI
+        </p>
+        <hr style="margin-left:100px;margin-right:100px;">
+    </div>
+
+
+
+
+
+<script src="sliderscript.js"></script>
+
+
+</body>
+</html>
