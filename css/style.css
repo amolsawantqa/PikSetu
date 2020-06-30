@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: #eeeeee;
+}
+.testimonal{
+  width: 720px;
+  height:auto;
+  margin: 120px auto;
+}
+.testimonal .item{
+  width: 220px;
+  margin: 0 10px;
+  float: left;
+  box-shadow: 0 0 5px rgba(0,0,0,0.125);
+  border-radius: 25px;
+}
+.testimonal .item .img{
+  padding:30px;
+}
+
+.testimonal .item .img img{
+  padding: 20px;
+  display: block;
+  margin:0 auto;
+}
+.testimonal .item .name{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: 101px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.testimonal .item .name p{
+  margin-top: -50px;
+  margin-left: -20px;
+}
+.testimonal .item .content{
+  background: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+}
+.testimonal .item .content h4{
+  padding-left:0px;
+  margin: 5px;
+
+}
+
